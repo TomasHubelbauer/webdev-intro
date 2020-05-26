@@ -73,3 +73,4 @@ declare module 'package-name' {
 - TypeScript `unknown` - better than `any` for "untyped" data.
 - `any` is okay but it's better to use an inline-type when one can be made:
   `data as MyType`.
+- API definitions: Swagger/OpenAPI, Postman, GraphQL, hand-rolled type defs
