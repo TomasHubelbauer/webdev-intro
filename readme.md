@@ -29,3 +29,8 @@
   - `npm rebuild node-sass`
 - CSSOM, BEM for maintaining isolated stylesheets
   - Also check out `styled-components` and other CSS in JS solutions
+- UI component sets:
+  - https://github.com/react-bootstrap/react-bootstrap
+  - https://github.com/microsoft/fluentui
+- Forms: Redux-Form, Formik, …
+- Escape hatches: `useRef`, `__dangerouslySetInnerHTML`
