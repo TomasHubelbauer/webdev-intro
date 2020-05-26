@@ -34,3 +34,30 @@
   - https://github.com/microsoft/fluentui
 - Forms: Redux-Form, Formik, …
 - Escape hatches: `useRef`, `__dangerouslySetInnerHTML`
+- Modals & dialogs: check out React portals
+- View models: type union `{ state: 'pending', … } | { state: 'completed', … }`
+
+```ts
+switch (state.type) {
+  case 'pending': {
+    // Type here is { state: 'pending' }
+  }
+  case 'complete': {
+    // Type here is { state: 'pending' }
+  }
+  case 'failed': {
+    // Return portal…
+  }
+}
+```
+
+```tsx
+render() {
+  return (
+    <div>
+      <h1>Heading</h1>
+      {isError && React.createPortal(<p>An error occured!</p>, document.getElementById('modal'))}
+    </div>
+  )
+}
+```
